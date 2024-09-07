@@ -5,6 +5,7 @@ export const loggingMiddleware = (req, res, next) => {
     const startTime = Date.now(); // Capture the start time of the request
     const { method, url, ip } = req; // Destructure the method, URL, and IP from the request object
 
+    console.log("Kishlay Chandan");
     console.log(`[${new Date().toISOString()}] - ${method} ${url} - IP: ${ip}`);
 
     // Listen for the response to be finished
